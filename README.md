@@ -21,7 +21,8 @@ The `AccountLookupAPI` provides multiple endpoints for performing account and na
 - Returns account information if a match is found.
 
 **Behavior:**
-- No return if the provided `AccountNumber` is `"1234567890"`.
+- Random results.
+- Caches the account number upon search and will return the cached model if the same account number is used.
 
 ---
 
@@ -36,12 +37,11 @@ The `AccountLookupAPI` provides multiple endpoints for performing account and na
 ```
 
 **Description:**
-- Similar to `/api/SearchByAccountNumber`, this endpoint performs a targeted account lookup.
+- Similar to `/api/SearchByAccountNumber`, this endpoint performs a static account lookup.
 - Specifically designed for static data validation and testing purposes.
 
 **Behavior:**
-- Returns a predefined response for static datasets.
-- Account number '1234567890' will yield no results.
+- No return if the provided `AccountNumber` is `"1234567890"`.
 
 ---
 
