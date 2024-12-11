@@ -41,6 +41,7 @@ The `AccountLookupAPI` provides multiple endpoints for performing account and na
 
 **Behavior:**
 - Returns a predefined response for static datasets.
+- Account number '1234567890' will yield no results.
 
 ---
 
